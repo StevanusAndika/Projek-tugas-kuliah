@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catur Sederhana</title>
+</head>
+ <style>
+    #papan {
+  border-collapse: collapse;
+}
+
+#papan td {
+  width: 50px;
+  height: 50px;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+  background: white;
+}
+ </style>
+<body>
+
+  <table id="papan">
+  </table>
+
+  <script>
+  // inisiasi papan catur
+const papan = document.getElementById("papan");
+
+// buat kotak hitam putih
+for (let i = 0; i < 8; i++) {
+  let baris = papan.insertRow(i);
+  for (let j = 0; j < 8; j++) {
+    let kolom = baris.insertCell(j);
+    if ((i + j) % 2 == 0) {
+      kolom.classList.add("black");
+    } else {
+      kolom.classList.add("white");
+    }
+  }
+}
+
+// tempatkan bidak catur
+cec
+// fungsi cek gerakan bidak
+
+// event listener klik kotak
+
+// dst...
+
+  </script>
+
+</body>
+</html>
